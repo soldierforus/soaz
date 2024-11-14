@@ -1,0 +1,16 @@
+
+<div class="flex flex-col shadow-lg bg-white p-8 min-h-[37rem] mb-20">
+  <div class="text-2xl font-semibold mb-2">{{package.name}}</div>
+  @if (package.price) {
+    <div class="text-4xl font-extrabold mb-4">${{package.price}}</div>
+  }
+  <div class="mb-4">{{package.description}}</div>
+  <div class="p-4">
+    <ul>
+      @for (bullet of package.bullets; track $index) {
+        <li class="font-bold">{{bullet}}</li>
+      }
+    </ul>
+  </div>
+  <button class="mt-auto">Get Started</button>
+</div>

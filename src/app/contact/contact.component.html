@@ -1,0 +1,38 @@
+<div class="w-full bg-sky-700 text-white py-16">
+  <h4 class="text-4xl font-bold text-center w-full mb-8">Contact Us</h4>
+  <div class="flex flex-col lg:flex-row justify-center gap-8 m-auto">
+    <div class="w-full lg:w-2/5 flex m-auto">
+      <form
+        action="https://formspree.io/f/"
+        method="POST"
+        class="w-full flex flex-col mx-auto"
+      >
+        <div class="flex flex-col sm:flex-row gap-6 mb-6">
+          <div class="md:w-1/2 flex flex-col w-full">
+            <label for="first-name">First Name</label>
+            <input class="h-12" required type="text" name="first-name" id="first-name">
+          </div>
+          <div class="md:w-1/2 flex flex-col w-full">
+            <label for="last-name">Last Name</label>
+            <input class="h-12" required type="text" name="last-name" id="last-name">
+          </div>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-6 mb-6">
+          <div class="md:w-1/2 flex flex-col w-full">
+            <label for="phone">Phone</label>
+            <input class="h-12" required type="text" name="phone" id="phone">
+          </div>
+          <div class="md:w-1/2 flex flex-col w-full">
+            <label for="package">Package</label>
+            <input class="h-12" required type="text" name="package" id="package">
+          </div>
+        </div>
+        <div class="flex flex-col w-full mb-5">
+          <label for="message">Message</label>
+          <textarea class="h-20" name="message" id="message"></textarea>
+        </div>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+</div>
