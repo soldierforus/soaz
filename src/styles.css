@@ -10,10 +10,14 @@ button {
   @apply py-2 px-3 bg-orange-400 w-full font-semibold text-white hover:bg-orange-700 duration-100;
 }
 
-li {
-  list-style: square inside;
+ul li {
+  @apply list-inside list-disc
 }
 
 .text-shadow {
   text-shadow: -1.5rem 1.5rem .3125rem rgb(0, 0, 0, .7);
+}
+
+ol li {
+  @apply list-inside list-decimal
 }

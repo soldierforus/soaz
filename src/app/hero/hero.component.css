@@ -1,4 +1,11 @@
 .hero {
-  background-image: url('../../assets/soaz.jpg');
-  @apply bg-cover bg-center;
+  background-image: url('../../assets/mobile.webp');
+  @apply bg-cover bg-bottom;
+}
+
+@media (min-width:  640px) {
+  .hero {
+    background-image: url('../../assets/soaz.webp');
+    @apply bg-center;
+  }
 }

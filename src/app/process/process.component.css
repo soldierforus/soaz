@@ -1,0 +1,9 @@
+.process {
+  @apply w-full;
+}
+
+@media (min-width:  640px) {
+  .process {
+    @apply w-3/5;
+  }
+}
