@@ -17,7 +17,7 @@ export class PricingComponent implements OnInit {
       description: 'The Basic package is perfect for a splash page, to announcing an event, a personal website, a portfolio, or to showcase the next big thing!  This package also has the fastest turnaround time from start to finish.',
       bullets: [
         'Landing page',
-        'Over 40 designs',
+        'Choose from over 40 designs',
         'Free hosting',
         '5 free updates'
       ]
@@ -27,7 +27,7 @@ export class PricingComponent implements OnInit {
       price: 1000,
       description: 'The Standard package is our most popular package.  It includes a contact form and email set up with the websites domain name.  This package is ideal if you\'re looking to stand out as a professional business.',
       bullets: [
-        'Over 120 designs',
+        'Choose from over 120 designs',
         'Free hosting',
         '10 free updates',
         'Contact form',
@@ -39,14 +39,13 @@ export class PricingComponent implements OnInit {
       price: 2000,
       description: 'The Advanced package includes everything the other packages have and it\'s fine tuned for performance, accessibility, and Search Engine Optimization.',
       bullets: [
-        'Over 120 designs',
+        'Choose from over 120 designs',
         'Free hosting',
         '20 free updates',
         'Contact form',
         'Custom domain email',
         'Custom Components',
-        'SEO',
-        'Accessibility'
+        'Search Engine Optimization',
       ]
     },
     {
@@ -55,7 +54,6 @@ export class PricingComponent implements OnInit {
       bullets: [
         'Multi-page website',
         'Custom design',
-        'Free hosting',
         '20 free updates',
         'Contact form',
         'Custom domain email',
