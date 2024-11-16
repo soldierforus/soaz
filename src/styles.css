@@ -18,6 +18,10 @@ nav li {
   @apply cursor-pointer list-none hover:text-orange-400/90;
 }
 
+form input, form textarea {
+  @apply text-black p-4;
+}
+
 .text-shadow {
   text-shadow: -1.5rem 1.5rem .3125rem rgb(0, 0, 0, .7);
 }
