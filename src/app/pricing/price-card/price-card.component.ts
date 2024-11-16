@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Package } from '../../models/package';
+import { ScrollService } from '../../services/scroll.service';
 
 @Component({
   selector: 'app-price-card',
@@ -9,9 +10,12 @@ import { Package } from '../../models/package';
 })
 export class PriceCardComponent implements OnInit {
   @Input() package!: Package;
-  constructor() { }
+  constructor(private scroll: ScrollService) { }
 
   ngOnInit() {
   }
-
+  
+  scrollTo(element: string) {
+    this.scroll.scrollTo(element);
+  }
 }

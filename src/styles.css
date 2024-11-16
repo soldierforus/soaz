@@ -11,7 +11,11 @@ button {
 }
 
 ul li {
-  @apply list-inside list-disc
+  @apply list-inside list-disc;
+}
+
+nav li {
+  @apply cursor-pointer list-none hover:text-orange-400/90;
 }
 
 .text-shadow {
