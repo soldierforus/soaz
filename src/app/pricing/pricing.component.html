@@ -4,7 +4,7 @@
     <p>We believe in transparency, which is why we offer clear pricing with no hidden fees. You’ll know exactly what to expect from the outset, allowing you to plan your budget with confidence. </p>
   </div>
   
-  <div class="w-full sm:w-3/4 grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-5 mb-20 mx-auto">
+  <div class="w-full sm:w-3/4 grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-5 mx-auto">
     @for (package of prices; track $index) {
       <app-price-card [package]="package"></app-price-card>
     }

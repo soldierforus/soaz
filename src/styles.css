@@ -7,7 +7,7 @@ p {
 }
 
 button {
-  @apply py-2 px-3 bg-orange-400 w-full font-semibold text-white hover:bg-orange-700 duration-100;
+  @apply py-2 px-3 bg-orange-500 w-full font-bold text-white hover:bg-orange-700 duration-100;
 }
 
 ul li {
@@ -15,7 +15,7 @@ ul li {
 }
 
 nav li {
-  @apply cursor-pointer list-none hover:text-orange-400/90;
+  @apply cursor-pointer list-none hover:text-orange-500/90;
 }
 
 form input, form textarea {

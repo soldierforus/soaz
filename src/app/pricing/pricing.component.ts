@@ -14,7 +14,7 @@ export class PricingComponent implements OnInit {
     {
       name: 'Basic',
       price: 500,
-      description: 'The Basic package is perfect for a splash page, to announcing an event, a personal website, a portfolio, or to showcase the next big thing!  This package also has the fastest turnaround time from start to finish.',
+      description: 'The Basic package is perfect for a splash page, announcing an event, a personal website, a portfolio, or to showcase the next big thing!  This package also has the fastest turnaround time from start to finish.',
       bullets: [
         'Landing page',
         'Choose from over 40 designs',
@@ -54,14 +54,13 @@ export class PricingComponent implements OnInit {
       bullets: [
         'Multi-page website',
         'Custom design',
-        '20 free updates',
         'Contact form',
         'Custom domain email',
         'Custom Components',
-        'SEO',
+        'Search Engine Optimization',
         'Analytics',
-        'CMS',
-        'CRM',
+        'Content Management Systems',
+        'Customer Relationship Management',
         'Dynamic data solutions'
       ]
     },
