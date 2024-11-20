@@ -35,9 +35,9 @@ export class PricingComponent implements OnInit {
       ]
     },
     {
-      name: 'Advanced',
+      name: 'Professional',
       price: 2000,
-      description: 'The Advanced package includes everything the other packages have and it\'s fine tuned for performance, accessibility, and Search Engine Optimization.',
+      description: 'The Professional package includes everything the other packages have and it\'s fine tuned for performance, accessibility, and Search Engine Optimization.',
       bullets: [
         'Choose from over 120 designs',
         'Free hosting',
