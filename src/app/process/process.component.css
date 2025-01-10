@@ -1,9 +1,7 @@
-.process {
-  @apply w-full;
+.process li {
+  @apply flex flex-col items-center justify-end;
 }
 
-@media (min-width:  640px) {
-  .process {
-    @apply w-3/5;
-  }
+.process li svg {
+  @apply mb-7;
 }
