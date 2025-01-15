@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   standalone: true
 })
 export class ProcessComponent implements OnInit {
+  payments: string[] = [ 'bitcoin','cash','paypal','mastercard','venmo', 'visa','zelle' ]
 
   constructor() { }
 

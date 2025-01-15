@@ -1,7 +1,7 @@
 <div class="w-full mb-4">
   <div class="mb-12 md:mb-4 text-center">
     <h3 id="process" class="text-4xl font-bold">The Process</h3>
-    <p class="text-sm">quick and painless</p>
+    <p >quick and painless</p>
   </div>
     <ol class="process grid space-y-12 grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 justify-evenly text-xl sm:text-2xl mt-4">
       <li>
@@ -25,4 +25,17 @@
         Launch
       </li>
     </ol>
+</div>
+<!-- <div class="my-14 flex justify-center">
+  <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" style="fill: rgb(0, 0, 0); --darkreader-inline-fill: #e7e6e5;" data-darkreader-inline-fill=""><path d="m18.707 12.707-1.414-1.414L13 15.586V6h-2v9.586l-4.293-4.293-1.414 1.414L12 19.414z"></path></svg>
+</div> -->
+<div class="my-36 payments text-center w-10/12 m-auto">
+  <p>For your convenience, the following payments are accepted <i><strong>without any additional fees</strong></i></p>
+  <ol class="flex justify-center flex-wrap gap-8 md:gap-12 items-center list-none w-10/12 m-auto">
+    @for (payment of payments; track $index) {
+      <li>
+        <img src="../../assets/payments/{{payment}}.webp" loading="lazy" alt="{{payment}} logo" class="w-20 my-2">
+      </li>
+    }
+  </ol>
 </div>

@@ -5,3 +5,11 @@
 .process li svg {
   @apply mb-7;
 }
+
+.payments ol li {
+  @apply list-none;
+}
+
+/* .payments ol {
+  max-width: 80%;
+} */
