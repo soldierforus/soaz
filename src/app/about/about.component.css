@@ -1,0 +1,7 @@
+.about p {
+  @apply sm:text-xl md:text-2xl;
+}
+
+.commitment p {
+  @apply sm:text-base md:text-lg;
+}
