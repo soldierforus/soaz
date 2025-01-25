@@ -10,7 +10,7 @@ button {
   @apply py-2 px-3 bg-orange-600 w-full font-black text-white hover:bg-orange-800 duration-100 uppercase text-xl tracking-wide;
 }
 
-ul li {
+.home ul li {
   @apply list-inside list-disc;
 }
 
@@ -22,7 +22,7 @@ form input, form textarea {
   @apply text-black p-4;
 }
 
-ol li {
+.home ol li {
   @apply list-inside list-decimal
 }
 
