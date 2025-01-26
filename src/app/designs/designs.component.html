@@ -1,13 +1,33 @@
 <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 3xl:grid-cols-4 place-items-center space-y-20 bg-zinc-50 items-baseline">
+
   @for (design of designs; track $index) {
-    <a class="p-4" [href]="'https://pixelarity.com/' + (design.name | toSlug)" target="_blank">
-      <div class="flex flex-col max-w-md bg-white shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl duration-500">
-        <div  class="flex bg-gradient-to-r from-orange-800 via-orange-600 to-orange-500 text-white font-bold justify-between p-2">
-          <h2>{{design.name}}</h2><span class="category">{{design.category}}</span>
+    @defer (on viewport) {
+      <a class="p-4" [href]="'https://pixelarity.com/' + (design.name | toSlug)" target="_blank">
+        <div class="flex flex-col max-w-md bg-white shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl duration-500">
+          <div  class="flex bg-gradient-to-r from-orange-800 via-orange-600 to-orange-500 text-white font-bold justify-between p-2">
+            <h2>{{design.name}}</h2><span class="category">{{design.category}}</span>
+          </div>
+          <img loading="lazy" src="../../assets/designs/{{design.name | toSlug}}.jpg" alt="">
         </div>
-        <img src="../../assets/designs/{{design.name | toSlug}}.jpg" alt="">
+      </a>
+    } @placeholder(minimum 500ms) {
+      <!-- Placeholder content while loading -->
+      <div class="placeholder">
+        <img loading="lazy" src="../../../public/android-chrome-512x512.png" alt="">
       </div>
-    </a>
+    } @loading {
+      <!-- Loading indicator -->
+      <div class="loading">
+        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZTJpbzV1eWpvOHdpZTRjMXF4NGhqMzlleWM1Y2Zwc2U1a292dm9jbSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/uIJBFZoOaifHf52MER/giphy.gif" alt="Loading...">
+      </div>
+    } @error {
+      <!-- Error message -->
+      <div class="error">
+        <p>Failed to load image. Please try again later.</p>
+      </div>
+    }
+    
+
   }
 </div>
 
