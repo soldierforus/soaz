@@ -1,9 +1,12 @@
 import { Component, OnInit } from '@angular/core';
+import { ToSlugPipe } from '../to-slug.pipe';
 
 @Component({
   selector: 'app-designs',
   templateUrl: './designs.component.html',
-  styleUrls: ['./designs.component.css']
+  styleUrls: ['./designs.component.css'],
+  standalone: true,
+  imports:[ToSlugPipe]
 })
 export class DesignsComponent implements OnInit {
   designs: 
