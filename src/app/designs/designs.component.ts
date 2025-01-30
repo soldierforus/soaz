@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ToSlugPipe } from '../to-slug.pipe';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-designs',
@@ -379,11 +380,23 @@ export class DesignsComponent implements OnInit {
       name: 'Miniport',
       category: 'Personal'
   }
-]
+    ]
 
-  constructor() { }
+    liveDemo: boolean = false;
+  
+  constructor(private route: ActivatedRoute) { 
+    console.log("this.designs.length", this.designs.length);
+
+    console.log("route", this.route.snapshot.routeConfig?.path);
+    if(this.route.snapshot.routeConfig?.path?.includes('live-demo')) {
+    this.liveDemo = true;
+    }
+    console.log("this.liveDemo", this.liveDemo);
+
+  }
 
   ngOnInit() {
+
   }
 
 }

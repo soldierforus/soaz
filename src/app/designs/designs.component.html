@@ -2,12 +2,12 @@
 
   @for (design of designs; track $index) {
     @defer (on viewport) {
-      <a class="p-4" [href]="'https://pixelarity.com/' + (design.name | toSlug)" target="_blank">
+      <a class="p-4 group" [href]="liveDemo ? 'https://pixelarity.com/' + (design.name | toSlug) : '/#contact'" target="_blank">
         <div class="flex flex-col max-w-md bg-white shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl duration-500">
           <div  class="flex bg-gradient-to-r from-orange-800 via-orange-600 to-orange-500 text-white font-bold justify-between p-2">
             <h2>{{design.name}}</h2><span class="category">{{design.category}}</span>
           </div>
-          <img loading="lazy" src="../../assets/designs/{{design.name | toSlug}}.jpg" alt="">
+          <img loading="lazy" src="../../assets/designs/{{design.name | toSlug}}.jpg" alt="A thumbnail of the {{design.name}} design">
         </div>
       </a>
     } @placeholder(minimum 500ms) {
