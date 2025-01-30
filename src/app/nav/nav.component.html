@@ -1,8 +1,20 @@
-<nav class="w-full absolute top-0 flex justify-center sm:justify-end z-50">
-  <ul class="flex flex-row space-x-6 p-6 text-white font-bold ">
-    <li (click)="scrollTo('about')">About</li>
-    <li (click)="scrollTo('pricing')">Pricing</li>
-    <li (click)="scrollTo('process')">Process</li>
-    <li (click)="scrollTo('contact')">Contact</li>
-  </ul>
-</nav>
+@if (currentPath !== '/') {
+  <nav class="w-full absolute top-0 flex justify-between bg-orange-400 h-12">
+    <a class="z-90" routerLink="/">
+      <img class="h-10 z-10" height="10" src="../../assets/default.webp" alt="a cutie saguaro logo">
+    </a>
+    <a class="flex uppercase tracking-widest font-bold text-white items-center justify-center pr-4" routerLink="/">
+      SOAZ Sites
+    </a>
+  </nav>
+} @else {
+  <nav class="w-full absolute top-0 flex justify-center sm:justify-end z-50">
+    <ul class="flex flex-row space-x-6 p-6 text-white font-bold ">
+      <li (click)="scrollTo('about')">About</li>
+      <li (click)="scrollTo('pricing')">Pricing</li>
+      <li (click)="scrollTo('process')">Process</li>
+      <li (click)="scrollTo('contact')">Contact</li>
+      <li routerLink="/designs">Designs</li>
+    </ul>
+  </nav>
+}

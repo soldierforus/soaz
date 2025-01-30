@@ -14,389 +14,476 @@ export class DesignsComponent implements OnInit {
     {
       name: string,
       category: string,
+      package: string
     }[]
    =[
     {
         name: 'Paradigm Shift',
-        category: 'Other'
+        category: 'Other',
+        package: 'Basic'
     },
     {
         name: 'Standout',
-        category: 'Portfolio'
+        category: 'Portfolio',
+        package: 'Standard/Pro'
     },
     {
         name: 'Inverse',
-        category: 'Business'
+        category: 'Business',
+        package: 'Standard/Pro'
     },
     {
         name: 'Hyperbolic',
-        category: 'Anything'
+        category: 'Anything',
+        package: 'Standard/Pro'
     },
     {
         name: 'Visualize',
-        category: 'Business'
+        category: 'Business',
+        package: 'Standard/Pro'
     },
     {
         name: 'Relativity',
-        category: 'Business'
+        category: 'Business',
+        package: 'Standard/Pro'
     },
     {
         name: 'Indivisible',
-        category: 'Personal'
+        category: 'Personal',
+        package: 'Standard/Pro'
     },
     {
         name: 'Landscape',
-        category: 'Other'
+        category: 'Other',
+        package: 'Standard/Pro'
     },
     {
         name: 'Transit',
-        category: 'Anything'
+        category: 'Anything',
+        package: 'Standard/Pro'
     },
     {
         name: 'Massively',
-        category: 'Other'
+        category: 'Other',
+        package: 'Basic'
     },
     {
         name: 'Hypothesis',
-        category: 'Business'
+        category: 'Business',
+        package: 'Standard/Pro'
     },
     {
         name: 'Cascade',
-        category: 'Business'
+        category: 'Business',
+        package: 'Standard/Pro'
     },
     {
         name: 'Vortex',
-        category: 'Anything'
+        category: 'Anything',
+        package: 'Standard/Pro'
     },
     {
         name: 'Multiverse',
-        category: 'Portfolio'
+        category: 'Portfolio',
+        package: 'Basic'
     },
     {
         name: 'Ethereal',
-        category: 'Personal'
+        category: 'Personal',
+        package: 'Basic'
     },
     {
         name: 'Altitude',
-        category: 'Business'
+        category: 'Business',
+        package: 'Standard/Pro'
     },
     {
         name: 'Formula',
-        category: 'Business'
+        category: 'Business',
+        package: 'Standard/Pro'
     },
     {
         name: 'Dimension',
-        category: 'Personal'
+        category: 'Personal',
+        package: 'Basic'
     },
     {
         name: 'Atmosphere',
-        category: 'Business'
+        category: 'Business',
+        package: 'Standard/Pro'
     },
     {
         name: 'Story',
-        category: 'Anything'
+        category: 'Anything',
+        package: 'Basic'
     },
     {
         name: 'Telemetry',
-        category: 'Business'
+        category: 'Business',
+        package: 'Standard/Pro'
     },
     {
         name: 'Forty',
-        category: 'Business'
+        category: 'Business',
+        package: 'Basic'
     },
     {
         name: 'Editorial',
-        category: 'Other'
+        category: 'Other',
+        package: 'Basic'
     },
     {
         name: 'Faction',
-        category: 'Other'
+        category: 'Other',
+        package: 'Standard/Pro'
     },
     {
         name: 'Slate',
-        category: 'Anything'
+        category: 'Anything',
+        package: 'Standard/Pro'
     },
     {
         name: 'Phantom',
-        category: 'Anything'
+        category: 'Anything',
+        package: 'Basic'
     },
     {
         name: 'Polymorph',
-        category: 'Other'
+        category: 'Other',
+        package: 'Standard/Pro'
     },
     {
         name: 'Stellar',
-        category: 'Anything'
+        category: 'Anything',
+        package: 'Basic'
     },
     {
         name: 'Hologram',
-        category: 'Anything'
+        category: 'Anything',
+        package: 'Standard/Pro'
     },
     {
         name: 'Hyperspace',
-        category: 'Anything'
+        category: 'Anything',
+        package: 'Standard/Pro'
     },
     {
         name: 'Reflex',
-        category: 'Anything'
+        category: 'Anything',
+        package: 'Standard/Pro'
     },
     {
         name: 'Prototype',
-        category: 'Business'
+        category: 'Business',
+        package: 'Standard/Pro'
     },
     {
         name: 'Locus',
-        category: 'Anything'
+        category: 'Anything',
+        package: 'Standard/Pro'
     },
     {
         name: 'Solid State',
-        category: 'Anything'
+        category: 'Anything',
+        package: 'Basic'
     },
     {
         name: 'Lens',
-        category: 'Portfolio'
+        category: 'Portfolio',
+        package: 'Basic'
     },
     {
         name: 'Split Screen',
-        category: 'Anything'
+        category: 'Anything',
+        package: 'Standard/Pro'
     },
     {
         name: 'Tactile',
-        category: 'Anything'
+        category: 'Anything',
+        package: 'Standard/Pro'
     },
     {
         name: 'Future Imperfect',
-        category: 'Other'
+        category: 'Other',
+        package: 'Basic'
     },
     {
         name: 'Magnetic',
-        category: 'Anything'
+        category: 'Anything',
+        package: 'Standard/Pro'
     },
     {
         name: 'Fractal',
-        category: 'Anything'
+        category: 'Anything',
+        package: 'Basic'
     },
     {
         name: 'Elemental',
-        category: 'Business'
+        category: 'Business',
+        package: 'Standard/Pro'
     },
     {
         name: 'Cogent',
-        category: 'Business'
+        category: 'Business',
+        package: 'Standard/Pro'
     },
     {
         name: 'Spectral',
-        category: 'Anything'
+        category: 'Anything',
+        package: 'Basic'
     },
     {
         name: 'Construct',
-        category: 'Anything'
+        category: 'Anything',
+        package: 'Standard/Pro'
     },
     {
         name: 'Optics',
-        category: 'Anything'
+        category: 'Anything',
+        package: 'Standard/Pro'
     },
     {
         name: 'Exponent',
-        category: 'Business'
+        category: 'Business',
+        package: 'Standard/Pro'
     },
     {
         name: 'Archetype',
-        category: 'Business'
+        category: 'Business',
+        package: 'Standard/Pro'
     },
     {
         name: 'Eventually',
-        category: 'Other'
+        category: 'Other',
+        package: 'Basic'
     },
     {
         name: 'Photon',
-        category: 'Anything'
+        category: 'Anything',
+        package: 'Basic'
     },
     {
         name: 'Scalar',
-        category: 'Business'
+        category: 'Business',
+        package: 'Standard/Pro'
     },
     {
         name: 'Strata',
-        category: 'Personal'
+        category: 'Personal',
+        package: 'Basic'
     },
     {
         name: 'Catalyst',
-        category: 'Anything'
+        category: 'Anything',
+        package: 'Standard/Pro'
     },
     {
         name: 'Threshold',
-        category: 'Anything'
+        category: 'Anything',
+        package: 'Standard/Pro'
     },
     {
         name: 'Highlights',
-        category: 'Personal'
+        category: 'Personal',
+        package: 'Basic'
     },
     {
         name: 'Big Picture',
-        category: 'Portfolio'
+        category: 'Portfolio',
+        package: 'Basic'
     },
     {
         name: 'Frequency',
-        category: 'Business'
+        category: 'Business',
+        package: 'Standard/Pro'
     },
     {
         name: 'Gravity',
-        category: 'Business'
+        category: 'Business',
+        package: 'Standard/Pro'
     },
     {
         name: 'Landed',
-        category: 'Business'
+        category: 'Business',
+        package: 'Basic'
     },
     {
-      name: 'Elevation',
-      category: 'Anything'
-  },
+        name: 'Elevation',
+        category: 'Anything',
+        package: 'Standard/Pro'
+    },
   {
       name: 'Drift',
-      category: 'Business'
+      category: 'Business',
+      package: 'Standard/Pro'
   },
   {
       name: 'Read Only',
-      category: 'Personal'
+      category: 'Personal',
+      package: 'Basic'
   },
   {
       name: 'Alpha',
-      category: 'Anything'
+      category: 'Anything',
+      package: 'Basic'
   },
   {
       name: 'Telephasic',
-      category: 'Anything'
+      category: 'Anything',
+      package: 'Basic'
   },
   {
       name: 'Latitude',
-      category: 'Business'
+      category: 'Business',
+      package: ''
   },
   {
       name: 'Twenty',
-      category: 'Business'
+      category: 'Business',
+      package: 'Basic'
   },
   {
       name: 'Momentum',
-      category: 'Business'
+      category: 'Business',
+      package: 'Standard/Pro'
   },
   {
       name: 'Iconic',
-      category: 'Business'
+      category: 'Business',
+      package: 'Standard/Pro'
   },
   {
       name: 'Parallelism',
-      category: 'Portfolio'
+      category: 'Portfolio',
+      package: 'Basic'
   },
   {
       name: 'Helios',
-      category: 'Anything'
+      category: 'Anything',
+      package: 'Basic'
   },
   {
       name: 'Directive',
-      category: 'Anything'
+      category: 'Anything',
+      package: 'Basic'
   },
   {
       name: 'Prologue',
-      category: 'Personal'
+      category: 'Personal',
+      package: 'Basic'
   },
   {
       name: 'Zenith',
-      category: 'Business'
+      category: 'Business',
+      package: 'Standard/Pro'
   },
   {
       name: 'Escape Velocity',
-      category: 'Anything'
+      category: 'Anything',
+      package: 'Basic'
   },
   {
       name: 'Apex',
-      category: 'Business'
+      category: 'Business',
+      package: 'Standard/Pro'
   },
   {
       name: 'Tessellate',
-      category: 'Anything'
+      category: 'Anything',
+      package: 'Basic'
   },
   {
       name: 'Astral',
-      category: 'Personal'
+      category: 'Personal',
+      package: 'Basic'
   },
   {
       name: 'ZeroFour',
-      category: 'Business'
+      category: 'Business',
+      package: 'Basic'
   },
   {
       name: 'Wide Angle',
-      category: 'Anything'
+      category: 'Anything',
+      package: 'Standard/Pro'
   },
   {
       name: 'Strongly Typed',
-      category: 'Anything'
+      category: 'Anything',
+      package: 'Basic'
   },
   {
       name: 'TXT',
-      category: 'Business'
+      category: 'Business',
+      package: 'Basic'
   },
   {
       name: 'Concentric',
-      category: 'Business'
+      category: 'Business',
+      package: 'Standard/Pro'
   },
   {
       name: 'Dopetrope',
-      category: 'Anything'
+      category: 'Anything',
+      package: 'Basic'
   },
   {
       name: 'Layered',
-      category: 'Anything'
+      category: 'Anything',
+      package: 'Standard/Pro'
   },
   {
       name: 'Striped',
-      category: 'Personal'
+      category: 'Personal',
+      package: 'Basic'
   },
   {
       name: 'Axiom',
-      category: 'Business'
+      category: 'Business',
+      package: 'Standard/Pro'
   },
   {
       name: 'Arcana',
-      category: 'Business'
+      category: 'Business',
+      package: 'Standard/Pro'
   },
   {
       name: 'Aerial',
-      category: 'Personal'
+      category: 'Personal',
+      package: 'Basic'
   },
   {
       name: 'Verti',
-      category: 'Anything'
+      category: 'Anything',
+      package: 'Basic'
   },
   {
       name: 'Venue',
-      category: 'Business'
+      category: 'Business',
+      package: 'Standard/Pro'
   },
   {
       name: 'Polaris',
-      category: 'Anything'
+      category: 'Anything',
+      package: 'Standard/Pro'
   },
   {
       name: 'Miniport',
-      category: 'Personal'
+      category: 'Personal',
+      package: 'Basic'
   }
     ]
 
     liveDemo: boolean = false;
-  
   constructor(private route: ActivatedRoute) { 
-    console.log("this.designs.length", this.designs.length);
 
-    console.log("route", this.route.snapshot.routeConfig?.path);
     if(this.route.snapshot.routeConfig?.path?.includes('live-demo')) {
     this.liveDemo = true;
     }
-    console.log("this.liveDemo", this.liveDemo);
 
   }
 
   ngOnInit() {
 
   }
-
 }
