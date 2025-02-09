@@ -26,8 +26,6 @@ form input, form textarea {
   @apply list-inside list-decimal
 }
 
-@media (min-width:  640px) {
-  .text-shadow {
-    text-shadow: -1.5rem 1.5rem .3125rem rgb(0, 0, 0, .7);
-  }
+.text-shadow {
+  text-shadow: -1.5rem 1.5rem .3125rem rgb(0, 0, 0, .7);
 }
