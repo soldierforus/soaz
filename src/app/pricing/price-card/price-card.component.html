@@ -1,8 +1,23 @@
 
 <div class="flex flex-col shadow-lg bg-white p-8 min-h-[37rem] mb-20">
-  <div class="text-2xl font-semibold mb-2">{{package.name}}</div>
+  <div class="flex justify-between">
+    <div class="text-2xl font-semibold mb-2">{{package.name}}</div>
+    @if (package.discount) {
+      <span class="text-3xl font-extrabold text-green-600">
+        {{package.discount}}% Off
+      </span>
+    }
+    
+  </div>
   @if (package.price) {
-    <div class="text-4xl font-extrabold mb-4">${{package.price}}</div>
+    <div class="text-4xl font-extrabold mb-4">
+      <span [class]="package.discount ? 'line-through' : ''">${{package.price}}</span>
+      @if(package.discount) {
+        <span class="text-green-600">
+          ${{package.price - (package.price * (package.discount / 100))}}
+        </span>
+      }
+    </div>
   }
   <div class="mb-4">{{package.description}}</div>
   <div class="p-4">

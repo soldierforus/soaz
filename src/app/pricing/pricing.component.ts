@@ -14,6 +14,7 @@ export class PricingComponent implements OnInit {
     {
       name: 'Basic',
       price: 500,
+      discount: 30,
       description: 'The Basic package is perfect for a splash page, announcing an event, a personal website, a portfolio, or to showcase the next big thing!  This package also has the fastest turnaround time from start to finish.',
       bullets: [
         'Landing page',
@@ -26,6 +27,7 @@ export class PricingComponent implements OnInit {
       name: 'Standard',
       price: 1000,
       description: 'The Standard package is our most popular package.  It includes a contact form and email set up with the websites domain name.  This package is ideal if you\'re looking to stand out as a professional business.',
+      discount: 40,
       bullets: [
         'Choose from over 120 designs',
         'Free hosting',
@@ -37,6 +39,7 @@ export class PricingComponent implements OnInit {
     {
       name: 'Professional',
       price: 2000,
+      discount: 50,
       description: 'The Professional package includes everything the other packages have and it\'s fine tuned for performance, accessibility, and Search Engine Optimization.',
       bullets: [
         'Choose from over 120 designs',
