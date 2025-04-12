@@ -2,7 +2,7 @@
 <div class="flex flex-col shadow-lg bg-white p-8 min-h-[37rem] mb-20">
   <div class="flex justify-between">
     <div class="text-2xl font-semibold mb-2">{{package.name}}</div>
-    @if (package.discount) {
+    @if (package.discount && !saleEnds.over) {
       <span class="text-3xl font-extrabold text-green-600">
         {{package.discount}}% Off
       </span>
@@ -11,8 +11,8 @@
   </div>
   @if (package.price) {
     <div class="text-4xl font-extrabold mb-4">
-      <span [class]="package.discount ? 'line-through' : ''">${{package.price}}</span>
-      @if(package.discount) {
+      <span [class]="package.discount && !saleEnds.over ? 'line-through' : ''">${{package.price}}</span>
+      @if(package.discount && !saleEnds.over) {
         <span class="text-green-600">
           ${{package.price - (package.price * (package.discount / 100))}}
         </span>

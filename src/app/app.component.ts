@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { FooterComponent } from "./footer/footer.component";
 import { NavComponent } from "./nav/nav.component";
+import { SaleService } from './services/sale.service';
 
 
 @Component({
@@ -11,31 +12,16 @@ import { NavComponent } from "./nav/nav.component";
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
+
 export class AppComponent {
   title = 'soazsites';
-  saleEnds = this.timeRemaining(new Date ('2025-04-01T23:59:59'))
+  saleEnds!: any;
   
-  timeRemaining(targetDate: Date): { days: number; hours: number } {
-    const now = new Date();
-    const timeDiff = targetDate.getTime() - now.getTime();
+  constructor(private saleService: SaleService) {
+    this.saleEnds = this.saleService.timeRemaining(new Date ('2025-04-01T23:59:59'))
+  }
+  
 
-    // Check if the target date has already passed
-    if (timeDiff < 0) {
-        return {
-            days: 0,
-            hours: 0
-        };
-    }
-
-    // Calculate the remaining time in milliseconds
-    const remainingDays = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
-    const remainingHours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-
-    return {
-        days: remainingDays,
-        hours: remainingHours
-    };
-}
 
   
   // // Example usage:
