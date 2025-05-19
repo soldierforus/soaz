@@ -18,7 +18,7 @@ export class AppComponent {
   saleEnds!: any;
   
   constructor(private saleService: SaleService) {
-    this.saleEnds = this.saleService.timeRemaining(new Date ('2025-04-01T23:59:59'))
+    this.saleEnds = this.saleService.timeRemaining(new Date ('2025-05-26T23:59:59'))
   }
   
 
